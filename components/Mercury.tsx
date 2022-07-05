@@ -9,6 +9,18 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import styles from "../styles/Mercury.module.css";
+interface RailButtonProps {
+    name: string;
+    icon: any;
+    isMenu: boolean;
+}
+const RailButton = (props: RailButtonProps) => {
+    return (
+        <div>
+            {props.name} {props.icon} {props.isMenu}
+        </div>
+    );
+};
 const MercuryLeftRail = () => {
     return (
         <Box className={styles.mercury_left_panel_nav}>
@@ -17,7 +29,8 @@ const MercuryLeftRail = () => {
                 hi
                 <div>content</div>
             </div>
-            <Link></Link>
+            <Link component="a">My Store</Link>
+            <RailButton name={"name"} icon={"icon"} isMenu={false} />
         </Box>
     );
 };
