@@ -1,3 +1,66 @@
+.main {
+    height: 100%;
+}
 .container {
-    background-color: #e5e5e5;
+    background-color: #ffffff;
+    display: flex;
+}
+/* Left Rail */
+.mercury_left_rail {
+    background: #fafafa;
+}
+.mercury_left_panel_nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0px;
+    width: 240px;
+    height: 100%;
+    background: #fafafa;
+}
+.mercury_header_container {
+    position: relative;
+    top: 0;
+    left: 240px;
+    width: 100%;
+}
+.mercury_global_header {
+    /*
+     * global viewport positioning
+     */
+    position: fixed;
+    top: 0px;
+    left: 240px;
+    right: 0px;
+}
+.mercury_global_header_internal {
+    /*
+     * internal items
+     */
+    display: inline;
+    position: absolute;
+    /* background/paper */
+
+    background: #ffffff;
+}
+.mercury_left_rail_container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 240px;
+    height: 100%;
+}
+.mercury_main_content_container {
+    display: block;
+    position: relative;
+    /*
+     * hard code positioning, because header and rail are fixed
+     */
+    left: 240px;
+    top: 49px;
+}
+.mercury_global_header_hamburger_menu {
+    color: rgba(0, 0, 0, 0.6);
+}
+.mercury_global_header_toolbar {
+    min-height: 49px;
 }
