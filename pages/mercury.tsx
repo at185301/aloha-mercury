@@ -15,7 +15,7 @@ const Mercury: NextPage = () => {
                 <div className={styles.mercury_left_rail_container}>
                     <MercuryLeftRail />
                 </div>
-                    <MercuryGlobalHeader />
+                <MercuryGlobalHeader />
                 <div className={styles.mercury_main_content_container}>
                     other content goes here?
                     <div>empty</div>
