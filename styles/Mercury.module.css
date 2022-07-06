@@ -6,17 +6,6 @@
     display: flex;
 }
 /* Left Rail */
-.mercury_left_rail {
-    background: #fafafa;
-}
-.mercury_left_panel_nav {
-    flex-direction: column;
-    align-items: center;
-    padding: 16px 0px;
-    width: 240px;
-    height: 100%;
-    background: #fafafa;
-}
 .mercury_header_container {
     position: relative;
     top: 0;
@@ -42,13 +31,6 @@
 
     background: #ffffff;
 }
-.mercury_left_rail_container {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 240px;
-    height: 100%;
-}
 .mercury_main_content_container {
     display: block;
     position: relative;
@@ -64,4 +46,46 @@
 }
 .mercury_global_header_toolbar {
     min-height: 49px;
+}
+.mercury_left_rail_button {
+    width: 90%;
+    flex-grow: 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.mercury_left_rail_button_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 5px;
+}
+.mercury_left_rail_button_arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+}
+.mercury_left_rail_button_name {
+    width: 70%;
+    text-align: left;
+    font-size: medium;
+}
+.mercury_left_panel_nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0px;
+    width: 240px;
+    height: 100%;
+    background: #fafafa;
+}
+.mercury_left_rail_container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 240px;
+    height: 100%;
 }
