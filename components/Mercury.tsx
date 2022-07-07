@@ -29,7 +29,7 @@ const MenuButton = styled(Button)`
     color: rgba(0, 0, 0, 0.6);
     &:hover {
         background-color: rgba(27, 118, 212, 0.14);
-        color: #1B76D4;
+        color: #1b76d4;
     }
 `;
 const RailButton = (props: RailButtonProps) => {
@@ -93,9 +93,7 @@ export const MercuryGlobalHeader = () => {
                         variant="h6"
                         component="div"
                         sx={{ flexGrow: 1 }}
-                    >
-                        News
-                    </Typography>
+                    ></Typography>
                 </Toolbar>
             </AppBar>
         </Box>
