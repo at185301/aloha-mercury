@@ -12,15 +12,17 @@ const Mercury: NextPage = () => {
                 <meta name="description" content="mercury practice" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className={styles.main}>
-                <div className={styles.menu_overlay}>
-                    <div className={styles.mercury_left_rail_container}>
-                        <MercuryLeftRail />
-                    </div>
+            <div className={styles.header_nav_shared_props}>
+                <header>
                     <div className={styles.global_header_container}>
                         <MercuryGlobalHeader />
                     </div>
-                </div>
+                </header>
+                <nav className={styles.mercury_left_rail_container}>
+                    <MercuryLeftRail />
+                </nav>
+            </div>
+            <main className={styles.main}>
                 <div className={styles.mercury_main_content_container}>
                     other content goes here?
                 </div>

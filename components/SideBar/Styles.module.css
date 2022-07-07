@@ -1,6 +1,8 @@
 .main {
-    height: 100%;
     background-color: #ffffff;
+}
+.header_nav_shared_props {
+    --nav-bar-width: 240px;
 }
 .container {
     display: flex;
@@ -9,7 +11,7 @@
 .mercury_header_container {
     position: relative;
     top: 0;
-    left: 240px;
+    left: var(--nav-bar-width);
     width: 100%;
 }
 .mercury_global_header {
@@ -18,7 +20,7 @@
      */
     position: fixed;
     top: 0px;
-    left: 240px;
+    left: var(--nav-bar-width);
     right: 0px;
 }
 .mercury_global_header_internal {
@@ -37,7 +39,7 @@
     /*
      * hard code positioning, because header and rail are fixed
      */
-    left: 240px;
+    left: var(--nav-bar-width);
     top: 49px;
 }
 .mercury_global_header_hamburger_menu {
@@ -77,25 +79,22 @@
     flex-direction: column;
     align-items: center;
     padding: 16px 0px;
-    width: 240px;
+    width: var(--nav-bar-width);
     height: 100%;
     background: #fafafa;
 }
 .mercury_left_rail_container {
-    flex-grow: 0;
-    align-self: stretch;
-    width: 240px;
-    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
 }
 .global_header_container {
-    flex-grow: 1;
-    height: 49px;
-    background-color: red;
-}
-.menu_overlay {
     position: fixed;
     top: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
+    right: 0;
+    left: auto;
+    width: calc(100% - var(--nav-bar-width));
+    height: 49px;
+    background-color: red;
 }
