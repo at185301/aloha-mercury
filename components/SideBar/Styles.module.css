@@ -1,8 +1,10 @@
-.main {
-    background-color: #ffffff;
-}
 .header_nav_shared_props {
     --nav-bar-width: 240px;
+}
+.main {
+    left: var(--nav-bar-width);
+    
+    background-color: #ffffff;
 }
 .container {
     display: flex;
@@ -82,7 +84,7 @@
     width: var(--nav-bar-width);
     height: 100%;
     background: #fafafa;
-}
+} 
 .mercury_left_rail_container {
     position: fixed;
     left: 0;
